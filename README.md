@@ -47,7 +47,8 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
 ---
 
 ## Contato 
-- [Linkedin](https://www.linkedin.com/in/danielcsxx/) 
+- Linkedin: [Linkedin](https://www.linkedin.com/in/danielcsxx/)</br> 
+- Github: [Github](https://github.com/Danielcsxx)
 
 
 
