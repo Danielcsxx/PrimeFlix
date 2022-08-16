@@ -2,6 +2,7 @@
 Este projeto foi desenvolvido com o intuito de colocar em prática o conhecimento que adquiri ao decorrer dos meus estudos.</br>
 O PrimeFlix lista o Top10 dos filmes atuais que estão em cartaz e possui um sistema de interação com o usuário.
 
+---
 
 ## 🏷️ Sobre
 O PrimeFlix é uma aplicação responsiva e com navegação optmizada através de rotas.</br>
@@ -50,5 +51,6 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
 - Linkedin: [Linkedin](https://www.linkedin.com/in/danielcsxx/)</br> 
 - Github: [Github](https://github.com/Danielcsxx)
 
+---
 
 
