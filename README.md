@@ -24,6 +24,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
 - Hooks | **_useState_** | **_useEffect_**
 - Package Manager | **_npm_**
 - Libs | **_react-router-dom_** | **_toastify_**
+- API | **_TMDB_**
 
 ---
 
