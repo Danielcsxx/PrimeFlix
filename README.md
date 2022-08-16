@@ -34,7 +34,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
     $ git clone https://github.com/Danielcsxx/PrimeFlix.git
 
     #entrar no diretório
-    $ cd app-prime
+    $ cd prime-app
 
     #instalar as dependências
     $ npm install
