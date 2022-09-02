@@ -34,10 +34,12 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
     $ git clone https://github.com/Danielcsxx/PrimeFlix.git
 
     #entrar no diretório
-    $ cd prime-app
+    $ cd PrimeFlix
 
     #instalar as dependências
     $ npm install
+    $ npm install react-router-dom
+    $ npm install --save react-toastify
 
     #iniciar a aplicação
     $ npm start
