@@ -24,7 +24,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
 - **_React_** | **_JavaScript_** | **_HTML5/ CSS3_**
 - Hooks | **_useState_** | **_useEffect_**
 - Package Manager | **_npm_**
-- Libs | **_react-router-dom_** | **_toastify_**
+- Libs | **_react-router-dom_** | **_toastify_** | **_Axios_**
 - API | **_TMDB_**
 
 ---
@@ -39,6 +39,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
     #instalar as dependências
     $ npm install
     $ npm install react-router-dom
+    $ npm install axios
     $ npm install --save react-toastify
 
     #iniciar a aplicação
