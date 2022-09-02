@@ -21,7 +21,7 @@ O projeto consume uma API open source e possibilita as seguintes interações:
 ## 🛠️ Tecnologias e serviços utilizados
 Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
 
-- **_React_** | **_JavaScript_** | **_HTML5/ CSS3_**
+- **_React.Js_** |  **_Node.Js_**  | **_JavaScript_** | **_Html5-Css3_**
 - Hooks | **_useState_** | **_useEffect_**
 - Package Manager | **_npm_**
 - Libs | **_react-router-dom_** | **_toastify_** | **_Axios_**
