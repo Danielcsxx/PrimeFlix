@@ -78,6 +78,7 @@
 
     .meus-filmes {
         margin-top: 16px;
+        border-radius: 1px;
     }
 
     .meus-filmes h1 {
@@ -93,13 +94,12 @@
     }
 
     .meus-filmes div a {
-        font-size: 16px;
-        margin-left: 28px;
+        font-size: 14px;
     }
 
     .meus-filmes button {
-        padding: 8px;
-        border-radius: 12px;
+        padding: 6px;
+        border-radius: 6px;
     }
 
 }
