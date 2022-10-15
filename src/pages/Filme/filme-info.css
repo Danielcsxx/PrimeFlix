@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,600&display=swap');
+
 .filme-info {
-    background-color: #00000080;
+    background: rgb(249, 175, 175);
+    background: radial-gradient(circle, rgba(249, 175, 175, 1) 0%, rgba(57, 0, 0, 1) 86%);
     color: #FFF;
     border-radius: 12px;
     margin: 0 auto;
@@ -11,9 +14,11 @@
 }
 
 .filme-info h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 36px;
     display: flex;
     justify-content: center;
-    margin: 14px 0;
+    margin: 10px;
 }
 
 .filme-info img {
@@ -25,15 +30,19 @@
 }
 
 .filme-info h3 {
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 22px;
     margin-top: 14px;
 }
 
 .filme-info span {
-    margin: 8px 0;
+    line-height: 22px;
+    margin: 12px 0;
 }
 
-.filme-info strong{
+.filme-info strong {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
     color: #ECEC00;
 }
 

@@ -11,7 +11,6 @@ function Favoritos() {
 
         const minhaLista = localStorage.getItem("@primeFlix");
         setFilmes(JSON.parse(minhaLista) || [])
-
     }, [])
 
     function excluirFilme(id) {
@@ -27,9 +26,7 @@ function Favoritos() {
     return (
         <div className="meus-filmes">
             <h1>Meus Favoritos</h1>
-
             {filmes.length === 0 && <span>Você não possui nenhum filme salvo nos favoritos :/<Link to={"/"}>Ir para Home</Link></span>}
-
             <ul>
                 {filmes.map((filme) => {
                     return (

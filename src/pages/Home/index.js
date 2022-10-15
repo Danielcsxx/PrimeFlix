@@ -8,7 +8,6 @@ function Home() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-
         async function loadFilmes() {
             const response = await api.get("movie/now_playing", {
                 params: {
@@ -17,14 +16,10 @@ function Home() {
                     page: 1,
                 }
             })
-
             setFilmes(response.data.results.slice(0, 10));
             setLoading(false);
-
         }
-
         loadFilmes();
-
     }, [])
 
     if (loading) {
@@ -47,7 +42,8 @@ function Home() {
                         </article>
                     )
                 })}
-            </div>
+                <a href="/">Back to Top</a>
+            </div> 
         </div>
     );
 }

@@ -40,7 +40,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação:
     $ npm install
     $ npm install react-router-dom
     $ npm install axios
-    $ npm install --save react-toastify
+    $ npm install react-toastify
 
     #iniciar a aplicação
     $ npm start
