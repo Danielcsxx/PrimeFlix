@@ -58,3 +58,15 @@
     color: #000000;
     transition: all 700ms;
 }
+
+@media (max-width: 600px) {
+
+    .lista-filmes strong {
+        font-size: 26px;
+    }
+
+    .lista-filmes a {
+        font-size: 18px;
+    }
+
+}

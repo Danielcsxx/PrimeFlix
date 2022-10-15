@@ -73,3 +73,29 @@
     background-color: #FFF;
     color: #750000;
 }
+
+@media (max-width: 600px) {
+
+    .meus-filmes h1 {
+        font-size: 26px;
+    }
+
+    .meus-filmes span {
+        font-size: 18px;
+    }
+
+    .meus-filmes ul {
+        width: 100%;
+    }
+
+    .meus-filmes div a {
+        font-size: 16px;
+        margin-left: 28px;
+    }
+
+    .meus-filmes button {
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+}
