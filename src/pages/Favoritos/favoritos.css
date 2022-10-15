@@ -76,6 +76,10 @@
 
 @media (max-width: 600px) {
 
+    .meus-filmes {
+        margin-top: 16px;
+    }
+
     .meus-filmes h1 {
         font-size: 26px;
     }

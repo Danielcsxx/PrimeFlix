@@ -61,12 +61,23 @@
 
 @media (max-width: 600px) {
 
+    .container {
+        margin-top: -26px;
+    }
+
+    .lista-filmes article {
+        margin-bottom: 16px;
+        border-radius: 1px;
+    }
+
     .lista-filmes strong {
         font-size: 26px;
     }
 
     .lista-filmes a {
         font-size: 18px;
+        border-radius: 1px;
+        width: 100%;
     }
 
 }
