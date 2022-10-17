@@ -49,14 +49,51 @@
     background-color: #2c2727fd;
     color: #FFF;
     text-decoration: none;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .lista-filmes a:hover {
     background-color: #FFF;
     color: #000000;
-    transition: all 700ms;
+    transition: all 500ms;
+}
+
+.bck-top {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+}
+
+.footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 3rem;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.heart {
+    color: red;
+}
+
+.contact-Me {
+    margin-left: 1rem;
+    color: #FFF;
+}
+
+.contact-Me:hover {
+    color: #2751C7;
+    transition: all 300ms ease-in-out;
+}
+
+.footer p {
+    margin: 0;
+    padding: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -79,5 +116,11 @@
         border-radius: 1px;
         width: 100%;
     }
+
+    .footer {
+        margin-top: -3rem;
+        font-size: 1rem;
+    }
+
 
 }

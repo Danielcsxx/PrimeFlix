@@ -42,8 +42,17 @@ function Home() {
                         </article>
                     )
                 })}
-                <a href="/">Back to Top</a>
-            </div> 
+                <button className="bck-top"><a href="/">Voltar para o topo</a></button>
+            </div>
+
+            <footer className="footer">
+                <p>
+                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Danielcsxx">Feito com <span
+                        className="heart">❤</span> por<span className="contact-Me">Danielcsxx</span>
+                    </a>
+                </p>
+            </footer>
+
         </div>
     );
 }
