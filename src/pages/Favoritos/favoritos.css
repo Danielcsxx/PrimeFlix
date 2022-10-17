@@ -31,7 +31,6 @@
     color: #b10000;
     font-size: 120%;
     transition: all 300ms;
-
 }
 
 .meus-filmes ul {
@@ -57,14 +56,15 @@
     display: block;
     text-decoration: none;
     color: #FFF;
-    margin-right: 14px;
+    margin-right: 18px;
 }
 
 .meus-filmes button {
     background-color: #750000;
     color: #FFF;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
     cursor: pointer;
     transition: 1s;
 }
@@ -74,9 +74,10 @@
     color: #750000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 
     .meus-filmes {
+        width: 100%;
         margin-top: 16px;
         border-radius: 1px;
     }
@@ -98,8 +99,8 @@
     }
 
     .meus-filmes button {
-        padding: 6px;
-        border-radius: 6px;
+        border: none;
+        border-radius: 3px;
     }
 
 }

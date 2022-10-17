@@ -62,11 +62,12 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1px;
+    border: none;
 }
 
 .footer {
+    font-family: 'Archivo Narrow', sans-serif;
     margin-top: 1rem;
-    font-weight: bold;
     text-align: center;
     font-size: 26px;
     margin-bottom: 3rem;
@@ -115,6 +116,10 @@
         font-size: 18px;
         border-radius: 1px;
         width: 100%;
+    }
+
+    .bck-top {
+        border: none;
     }
 
     .footer {
