@@ -1,131 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,600&display=swap");
 
 .lista-filmes {
-    max-width: 800px;
-    margin: 44px auto;
+  max-width: 800px;
+  margin: 44px auto;
 }
 
 .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .lista-filmes article {
-    width: 100%;
-    background: rgb(249, 175, 175);
-    background: radial-gradient(circle, rgba(249, 175, 175, 1) 0%, rgba(57, 0, 0, 1) 86%);
-    color: #FFF;
-    padding: 15px;
-    margin-bottom: 22px;
-    border-radius: 4px;
+  width: 100%;
+  background: rgb(249, 175, 175);
+  background: radial-gradient(
+    circle,
+    rgba(249, 175, 175, 1) 0%,
+    rgba(57, 0, 0, 1) 86%
+  );
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 22px;
+  border-radius: 4px;
 }
 
 .lista-filmes strong {
-    font-family: 'Archivo Narrow', sans-serif;
-    margin-bottom: 14px;
-    text-align: center;
-    font-size: 36px;
-    display: block;
+  font-family: "Archivo Narrow", sans-serif;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 36px;
+  display: block;
 }
 
 .lista-filmes img {
-    width: 900px;
-    max-width: 100%;
-    max-height: 440px;
-    object-fit: cover;
-    display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  width: 900px;
+  max-width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.lista-filmes a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 22px;
-    background-color: #2c2727fd;
-    color: #FFF;
-    text-decoration: none;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 22px;
+  background-color: #2c2727fd;
+  border: none;
 }
 
-.lista-filmes a:hover {
-    background-color: #FFF;
-    color: #000000;
-    transition: all 500ms;
+.btn-br {
+  border-radius: 0px 0px 8px 8px;
 }
 
-.bck-top {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    /* border: none; */
+.btn-filme a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px;
+  border: none;
+}
+
+.btn-filme a:hover {
+  border-radius: 0px 0px 8px 8px;
+  background-color: #fff;
+  color: #000000;
+  transition: all 500ms;
+}
+
+.btn-top a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 0;
+  width: 100%;
+  border: none;
+}
+
+.btn-top a:hover {
+  background-color: #fff;
+  color: #000000;
+  transition: all 500ms;
 }
 
 .footer {
-    font-family: 'Archivo Narrow', sans-serif;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 3rem;
+  font-family: "Archivo Narrow", sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 3rem;
 }
 
 .footer a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .heart {
-    color: red;
+  color: red;
 }
 
 .contact-Me {
-    margin-left: 1rem;
-    color: #FFF;
+  margin-left: 1rem;
+  color: #fff;
 }
 
 .contact-Me:hover {
-    color: #2751C7;
-    transition: all 300ms ease-in-out;
+  color: #2751c7;
+  transition: all 300ms ease-in-out;
 }
 
 .footer p {
-    margin: 0;
-    padding: 1rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-top: -26px;
+  }
 
-    .container {
-        margin-top: -26px;
-    }
+  .lista-filmes article {
+    margin-bottom: 16px;
+    border-radius: 1px;
+  }
 
-    .lista-filmes article {
-        margin-bottom: 16px;
-        border-radius: 1px;
-    }
+  .lista-filmes strong {
+    font-size: 26px;
+  }
 
-    .lista-filmes strong {
-        font-size: 26px;
-    }
+  .lista-filmes a {
+    font-size: 18px;
+    /* border-radius: 1px; */
+    /* border-radius: 0px 0px 8px 8px; */
+    width: 100%;
+  }
 
-    .lista-filmes a {
-        font-size: 18px;
-        border-radius: 1px;
-        width: 100%;
-    }
+  .acessar-filme {
+    font-size: 18px;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+  }
 
-    .bck-top {
-        border: none;
-    }
+  .bck-top {
+    border: none;
+  }
 
-    .footer {
-        margin-top: -3rem;
-        font-size: 1rem;
-    }
-
-
+  .footer {
+    margin-top: -3rem;
+    font-size: 1rem;
+  }
 }

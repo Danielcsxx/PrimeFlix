@@ -1,60 +1,71 @@
-import { useEffect, useState } from 'react';
-import api from '../../services/api';
-import { Link } from 'react-router-dom';
-import './home.css';
+import { useEffect, useState } from "react";
+import api from "../../services/api";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 function Home() {
-    const [filmes, setFilmes] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [filmes, setFilmes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        async function loadFilmes() {
-            const response = await api.get("movie/now_playing", {
-                params: {
-                    api_key: "30ffaf92352fb6308f9915c6026616a5",
-                    language: "pt-BR",
-                    page: 1,
-                }
-            })
-            setFilmes(response.data.results.slice(0, 10));
-            setLoading(false);
-        }
-        loadFilmes();
-    }, [])
-
-    if (loading) {
-        return (
-            <div className="loading">
-                <h2>Carregando Filmes...</h2>
-            </div>
-        );
+  useEffect(() => {
+    async function loadFilmes() {
+      const response = await api.get("movie/now_playing", {
+        params: {
+          api_key: "30ffaf92352fb6308f9915c6026616a5",
+          language: "pt-BR",
+          page: 1,
+        },
+      });
+      setFilmes(response.data.results.slice(0, 10));
+      setLoading(false);
     }
+    loadFilmes();
+  }, []);
 
+  if (loading) {
     return (
-        <div className="container">
-            <div className="lista-filmes">
-                {filmes.map((filme) => {
-                    return (
-                        <article key={filme.id}>
-                            <strong>{filme.title}</strong>
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt="{filme.title}" />
-                            <Link to={`/filme/${filme.id}`}>Acessar</Link>
-                        </article>
-                    )
-                })}
-                <button className="bck-top"><a href="/">Voltar para o topo</a></button>
-            </div>
-
-            <footer className="footer">
-                <p>
-                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Danielcsxx">Feito com <span
-                        className="heart">❤</span> por<span className="contact-Me">Danielcsxx</span>
-                    </a>
-                </p>
-            </footer>
-
-        </div>
+      <div className="loading">
+        <h2>Carregando Filmes...</h2>
+      </div>
     );
+  }
+
+  return (
+    <div className="container">
+      <div className="lista-filmes">
+        {filmes.map((filme) => {
+          return (
+            <article key={filme.id}>
+              <strong>{filme.title}</strong>
+              <img
+                src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`}
+                alt="{filme.title}"
+              />
+              <button className="btn btn-br btn-filme">
+                <Link to={`/filme/${filme.id}`}>Acessar</Link>
+              </button>
+            </article>
+          );
+        })}
+        <button className="btn btn-top">
+          <a href="/">Voltar para o topo</a>
+        </button>
+      </div>
+
+      <footer className="footer">
+        <p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/Danielcsxx"
+          >
+            Feito com <span className="heart">❤</span> por
+            <span className="contact-Me">Danielcsxx</span>
+          </a>
+        </p>
+      </footer>
+    </div>
+  );
 }
 
 export default Home;
